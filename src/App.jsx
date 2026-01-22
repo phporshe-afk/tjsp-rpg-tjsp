@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./theme.css";
 function App() {
   const [screen, setScreen] = useState("menu");
   const [materia, setMateria] = useState(null);
