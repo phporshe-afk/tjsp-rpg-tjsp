@@ -1,1 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel', serif;
+  background: #f4e9c6 url('https://i.imgur.com/yH6G5G4.png');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #2b1b0f;
+}
+
+button {
+  font-family: inherit;
+  background: #7a4a0c;
+  color: #fff;
+  border: 2px solid #3d2608;
+  padding: 8px 14px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: 200ms;
+}
+
+button:hover {
+  background: #a0600e;
+}
 
