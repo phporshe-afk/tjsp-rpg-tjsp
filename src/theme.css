@@ -1,51 +1,128 @@
-.page {
-  padding: 20px;
-  background: #f2e9d8;
-  min-height: 100vh;
+/* ====== 🎨 THEME MEDIEVAL CORPORATIVO ====== */
+/* *Visão*: entregar um UI/UX que maximize a retenção de XP do usuário. */
+
+body {
+  background: #2d241a;
+  color: #f8e7c0;
   font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
 }
 
-.title {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #4a2e0e;
+/* Container central da aplicação */
+.medieval-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 22px;
+  background: rgba(29, 22, 16, 0.85);
+  border: 2px solid #a77f45;
+  border-radius: 10px;
+  margin-top: 35px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.8);
 }
 
-.subtitle, .quest-desc {
-  font-size: 16px;
-  margin-bottom: 20px;
-  color: #3a2b19;
+/* Ícones e títulos */
+h1, h2 {
+  font-family: 'Georgia', serif;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000;
+  color: #f9d78b;
 }
 
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+/* Texto */
+p {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 12px;
 }
 
-.btn {
-  padding: 10px 14px;
-  border: 2px solid #4a2e0e;
-  background: #d4c0a8;
+/* ====== BOTÕES MEDIEVAIS ====== */
+
+button {
   cursor: pointer;
-  font-weight: bold;
-  border-radius: 6px;
-  transition: 0.2s;
 }
 
-.btn:hover {
-  background: #c6b095;
+/* Botões principais */
+.btn-medieval {
+  display: block;
+  width: 100%;
+  background: linear-gradient(#7c552a, #4a2e0d);
+  border: 2px solid #d1a365;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 8px 0;
+  color: #fce1b3;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.15s all;
+}
+
+.btn-medieval:hover {
+  background: linear-gradient(#8d6032, #5b3a18);
   transform: translateY(-2px);
 }
 
-.footer-lore {
-  margin-top: 25px;
-  font-size: 13px;
-  font-style: italic;
-  color: #4a2e0e;
+/* Botões das respostas */
+.btn-opcao {
+  display: block;
+  width: 100%;
+  background: #3b2a15;
+  border: 2px solid #a77f45;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 6px 0;
+  color: #f3d9ac;
+  font-size: 17px;
+  transition: 0.15s all;
 }
 
-.back {
+.btn-opcao:hover {
+  background: #4e361e;
+  transform: translateX(3px);
+}
+
+/* Botão voltar */
+.btn-voltar {
+  background: #614425;
+  border: 2px solid #d1a365;
+  border-radius: 6px;
+  padding: 10px 20px;
   margin-top: 20px;
+  color: #f3dbb2;
+  font-weight: bold;
+}
+.btn-voltar:hover {
+  background: #70502e;
+}
+
+/* ====== FEEDBACK DE RESPOSTAS ====== */
+
+.acerto {
+  margin-top: 10px;
+  color: #4efc7a;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
+  animation: pulseAcerto 0.5s ease-in-out;
+}
+
+.erro {
+  margin-top: 10px;
+  color: #ff5e5e;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
+  animation: pulseErro 0.5s ease-in-out;
+}
+
+/* ====== ANIMAÇÕES ====== */
+
+@keyframes pulseAcerto {
+  0% { transform: scale(0.95); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes pulseErro {
+  0% { transform: scale(0.95); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
