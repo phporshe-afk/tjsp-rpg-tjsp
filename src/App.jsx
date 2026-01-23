@@ -1,61 +1,40 @@
 import { useState } from "react";
+import { questions } from "./questions";
 import "./theme.css";
 
 function App() {
   const [screen, setScreen] = useState("menu");
   const [materia, setMateria] = useState(null);
   const [index, setIndex] = useState(0);
-  const [acertou, setAcertou] = useState(null);
+  const [selected, setSelected] = useState(null);
+  const [resultado, setResultado] = useState(null);
 
-  const materias = ["Português", "Constitucional", "Informática", "Raciocínio Lógico"];
+  const materias = Object.keys(questions);
 
-  const quests = {
-    "Constitucional": [
-      {
-        pergunta: "Direitos fundamentais são:",
-        alternativas: [
-          "Cláusulas pétreas",
-          "Abolíveis por EC",
-          "Sem aplicabilidade imediata",
-          "Meramente programáticos"
-        ],
-        correta: 0
-      }
-    ],
-    "Português": [
-      {
-        pergunta: "Na frase “Os livros foram entregues a eles”, o termo 'a' é:",
-        alternativas: [
-          "Artigo",
-          "Preposição",
-          "Conjunção",
-          "Pronome"
-        ],
-        correta: 1
-      }
-    ]
-  };
+  const currentQuest = materia ? questions[materia][index] : null;
 
-  function responder(altIndex) {
-    const quest = quests[materia][index];
-    setAcertou(altIndex === quest.correta);
+  function responder(idx) {
+    setSelected(idx);
 
-    setTimeout(() => {
-      setAcertou(null);
-      if (index + 1 < quests[materia].length) {
-        setIndex(index + 1);
-      } else {
-        setScreen("fim");
-      }
-    }, 1200);
+    if (idx === currentQuest.correta) {
+      setResultado("Você desferiu um golpe certeiro! Resposta correta! ⚔️");
+    } else {
+      setResultado("O dragão desviou do golpe! Resposta incorreta 🐉");
+    }
+  }
+
+  function proxima() {
+    setSelected(null);
+    setResultado(null);
+    setIndex((i) => i + 1);
   }
 
   return (
-    <div className="medieval-container">
+    <div style={{ padding: "20px" }}>
       {screen === "menu" && (
         <>
-          <h1>🏰 TJ-SP Chronicles — Treineiro Competitivo</h1>
-          <p>Seja bem-vindo, jovem escudeiro! Escolha tua trilha de conhecimento:</p>
+          <h1>TJ-SP Chronicles — Treineiro Competitivo 🏰</h1>
+          <p>Saudações, escudeiro! Selecione sua disciplina:</p>
 
           {materias.map((m) => (
             <button
@@ -65,7 +44,7 @@ function App() {
                 setIndex(0);
                 setScreen("quest");
               }}
-              className="btn-medieval"
+              style={{ display: "block", margin: "10px 0" }}
             >
               {m}
             </button>
@@ -73,31 +52,35 @@ function App() {
         </>
       )}
 
-      {screen === "quest" && (
+      {screen === "quest" && currentQuest && (
         <>
-          <h2>📜 Disciplina: {materia}</h2>
-          <p><strong>Quest {index + 1}:</strong> {quests[materia][index].pergunta}</p>
+          <h2>{materia} — Quest {index + 1}</h2>
+          <p>{currentQuest.enunciado}</p>
 
-          {quests[materia][index].alternativas.map((alt, i) => (
+          {currentQuest.alternativas.map((alt, idx) => (
             <button
-              key={i}
-              onClick={() => responder(i)}
-              className="btn-opcao"
+              key={idx}
+              onClick={() => responder(idx)}
+              disabled={selected !== null}
+              style={{ display: "block", margin: "8px 0" }}
             >
               {alt}
             </button>
           ))}
 
-          {acertou === true && <p className="acerto">✔ Correto! Honra e glória ao cavaleiro!</p>}
-          {acertou === false && <p className="erro">✘ Errou! Mas até os reis tropeçam.</p>}
-        </>
-      )}
+          {resultado && (
+            <>
+              <p style={{ marginTop: "10px" }}>{resultado}</p>
 
-      {screen === "fim" && (
-        <>
-          <h2>🎉 Jornada concluída!</h2>
-          <p>Tua honra foi posta à prova, e apesar dos percalços, triunfaste!</p>
-          <button onClick={() => setScreen("menu")} className="btn-voltar">Voltar ao castelo</button>
+              {index + 1 < questions[materia].length ? (
+                <button onClick={proxima}>Próxima Quest →</button>
+              ) : (
+                <button onClick={() => setScreen("menu")}>
+                  Voltar ao Salão Principal 🏛️
+                </button>
+              )}
+            </>
+          )}
         </>
       )}
     </div>
