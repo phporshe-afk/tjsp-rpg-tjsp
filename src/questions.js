@@ -1,15 +1,15 @@
-export const questions = {
-  "Português": [
+const questions = {
+  portugues: [
     {
-      enunciado: "Indique a opção em que o emprego do sinal indicativo de crase está correto.",
+      enunciado: "Assinale a alternativa cujo emprego do sinal indicativo de crase está correto:",
       alternativas: [
         "a) Entreguei o relatório à todos os presentes.",
-        "b) Não se referiu à situação mencionada.",
-        "c) Chegou à tempo para a reunião.",
+        "b) Refiro-me à situação mencionada.",
+        "c) O ingresso é à partir das 18h.",
         "d) Apliquei-me às tarefas sem demora.",
-        "e) Aquelas são as diretrizes à seguir."
+        "e) Aquela é a estratégia à seguir."
       ],
-      correta: 3
+      correta: 1
     },
     {
       enunciado: "Assinale a alternativa em que NÃO há erro de concordância:",
@@ -23,12 +23,12 @@ export const questions = {
       correta: 2
     },
     {
-      enunciado: "Em ‘Aqueles relatórios, cansados, foram arquivados’, o termo destacado exerce função de:",
+      enunciado: "Em 'Aqueles relatórios, cansados, foram arquivados', o termo destacado exerce função de:",
       alternativas: [
         "a) Vocativo",
         "b) Aposto explicativo",
         "c) Adjunto adverbial",
-        "d) Predicativo",
+        "d) Predicativo do sujeito",
         "e) Objeto indireto"
       ],
       correta: 1
@@ -78,13 +78,13 @@ export const questions = {
       correta: 0
     },
     {
-      enunciado: "Em ‘Ele disse que viria’, a oração ‘que viria’ é classificada como:",
+      enunciado: "Em “Ele disse que viria”, a oração “que viria” é classificada como:",
       alternativas: [
         "a) Coordenada",
         "b) Subordinada substantiva",
         "c) Adverbial condicional",
         "d) Adjetiva restritiva",
-        "e) Intercalada"
+        "e) Integrada à frase"
       ],
       correta: 1
     },
@@ -133,7 +133,7 @@ export const questions = {
       correta: 0
     },
     {
-      enunciado: "Assinale a alternativa em que a palavra ‘porquê’ é usada adequadamente:",
+      enunciado: "Assinale a alternativa em que a palavra 'porquê' é usada adequadamente:",
       alternativas: [
         "a) Explique porquê faltou.",
         "b) Não sei por que ele saiu.",
@@ -188,26 +188,15 @@ export const questions = {
       correta: 2
     },
     {
-      enunciado: "Em “Estudantes chegaram cedo.”, o termo ‘chegaram’ está no tempo:",
+      enunciado: "Em “Estudantes chegaram cedo.”, o verbo 'chegaram' está no tempo:",
       alternativas: [
         "a) Futuro",
         "b) Presente",
-        "c) Pretérito Perfeito",
+        "c) Pretérito perfeito",
         "d) Infinitivo",
         "e) Gerúndio"
       ],
       correta: 2
-    },
-    {
-      enunciado: "Assinale a alternativa com sentido mais adequado:",
-      alternativas: [
-        "a) Ele não quis, entretanto, sair.",
-        "b) Ele não quis entretanto sair.",
-        "c) Ele não quis; entretanto, sair.",
-        "d) Ele não quis entretanto, sair.",
-        "e) Ele não quis, entretanto sair."
-      ],
-      correta: 0
     },
     {
       enunciado: "Assinale a alternativa em que o adjunto adverbial está corretamente identificado:",
@@ -215,14 +204,14 @@ export const questions = {
         "a) Ele correu rápido — modo",
         "b) Ele estudou duro — causa",
         "c) Hoje teremos chuva — tempo",
-        "d) Amanhã votaremos — lugar",
-        "e) Lá chegaram cedo — finalidade"
+        "d) Lá chegaram cedo — lugar",
+        "e) Eu corri ontem — finalidade"
       ],
       correta: 2
     }
   ],
 
-  "Constitucional": [
+  constitucional: [
     {
       enunciado: "O controle de constitucionalidade pode ser exercido de forma:",
       alternativas: [
@@ -255,682 +244,111 @@ export const questions = {
         "e) 1º de janeiro de 1988"
       ],
       correta: 0
-    },
-    {
-      enunciado: "As cláusulas pétreas não podem ser alteradas por:",
-      alternativas: [
-        "a) Lei Ordinária",
-        "b) Medida Provisória",
-        "c) Emenda Constitucional",
-        "d) Decreto Legislativo",
-        "e) Decreto Executivo"
-      ],
-      correta: 2
-    },
-    {
-      enunciado: "Quem tem legitimidade para propor ADI? (ação direta de inconstitucionalidade)",
-      alternativas: [
-        "a) Cidadão comum",
-        "b) Empresário",
-        "c) Partido com representação no Congresso",
-        "d) Vereador",
-        "e) Servidor público"
-      ],
-      correta: 2
-    },
-    {
-      enunciado: "A competência para julgar ações diretas de inconstitucionalidade é do:",
-      alternativas: [
-        "a) Tribunal de Justiça",
-        "b) Supremo Tribunal Federal",
-        "c) Congresso Nacional",
-        "d) Presidente da República",
-        "e) Ministério Público"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "O princípio da separação dos poderes foi enunciado por:",
-      alternativas: [
-        "a) Hobbes",
-        "b) Rousseau",
-        "c) Montesquieu",
-        "d) Voltaire",
-        "e) Platão"
-      ],
-      correta: 2
-    },
-    {
-      enunciado: "Cláusulas pétreas protegem, entre outras, a forma de Estado:",
-      alternativas: [
-        "a) Unificada",
-        "b) Federativa",
-        "c) Confederal",
-        "d) Monárquica",
-        "e) Distrital"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "O habeas corpus protege:",
-      alternativas: [
-        "a) Direito à saúde",
-        "b) Direito à propriedade",
-        "c) Liberdade de locomoção",
-        "d) Sigilo bancário",
-        "e) Propriedade intelectual"
-      ],
-      correta: 2
-    },
-  "Informática": [
-    {
-      enunciado: "Qual destas alternativas representa um recurso de segurança em redes de computadores?",
-      alternativas: [
-        "a) Firewall",
-        "b) HTML",
-        "c) CSS",
-        "d) DNS",
-        "e) PNG"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "O que significa a sigla 'HTTP' na internet?",
-      alternativas: [
-        "a) HyperText Transfer Protocol",
-        "b) Hyperlink Transmission Text Protocol",
-        "c) Hyper Transfer Text Package",
-        "d) High Transfer Text Protocol",
-        "e) Hyper Transfer Terminal Program"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "O comando CTRL + C é usado para:",
-      alternativas: [
-        "a) Colar",
-        "b) Copiar",
-        "c) Recortar",
-        "d) Salvar",
-        "e) Encontrar"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Qual item abaixo NÃO é um sistema operacional?",
-      alternativas: [
-        "a) Windows",
-        "b) Linux",
-        "c) MacOS",
-        "d) Android",
-        "e) Photoshop"
-      ],
-      correta: 4
-    },
-    {
-      enunciado: "Para que serve um antivírus em um computador?",
-      alternativas: [
-        "a) Aumentar a velocidade do sistema",
-        "b) Proteger contra malwares",
-        "c) Melhorar o desempenho gráfico",
-        "d) Ampliar o armazenamento",
-        "e) Fazer backup automático",
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "O que faz o componente ‘DNS’ na internet?",
-      alternativas: [
-        "a) Traduzir nomes de domínio em endereços IP",
-        "b) Aumentar a velocidade da rede",
-        "c) Servir como navegador de internet",
-        "d) Criar conexões seguras por VPN",
-        "e) Armazenar cookies de sessão"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Uma rede Wi-Fi permite:",
-      alternativas: [
-        "a) Conexão sem fio à internet",
-        "b) Exclusivamente conexão por cabo",
-        "c) Criptografia de e-mails",
-        "d) Transmissão por rádio",
-        "e) Backup automático na nuvem"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Qual extensão representa um arquivo de imagem?",
-      alternativas: [
-        "a) .exe",
-        "b) .docx",
-        "c) .gif",
-        "d) .mp3",
-        "e) .xlsx"
-      ],
-      correta: 2
-    },
-    {
-      enunciado: "O que faz o teclado no computador?",
-      alternativas: [
-        "a) Exibir imagens",
-        "b) Entrada de dados",
-        "c) Processar informações",
-        "d) Armazenar dados",
-        "e) Transmitir internet"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Qual dispositivo converte energia elétrica em som?",
-      alternativas: [
-        "a) Microfone",
-        "b) Placa-mãe",
-        "c) Alto-falante",
-        "d) Scanner",
-        "e) Modem"
-      ],
-      correta: 2
-    },
-    {
-      enunciado: "Um ‘browser’ é usado para:",
-      alternativas: [
-        "a) Editar vídeos",
-        "b) Navegar na internet",
-        "c) Compilar programas",
-        "d) Escanear documentos",
-        "e) Reproduzir áudio"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "O que significa a sigla ‘RAM’?",
-      alternativas: [
-        "a) Read Access Memory",
-        "b) Random Access Memory",
-        "c) Real Active Memory",
-        "d) Run Access Management",
-        "e) Random Archive Memory"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "O que faz o botão ‘Refresh’ no navegador?",
-      alternativas: [
-        "a) Fecha a aba",
-        "b) Atualiza a página",
-        "c) Abre nova janela",
-        "d) Salva o arquivo",
-        "e) Limpa o cache"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Para enviar um e-mail, você precisa de:",
-      alternativas: [
-        "a) Conta de e-mail",
-        "b) Impressora",
-        "c) Software de edição",
-        "d) Programa antivírus",
-        "e) Cabo HDMI"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Qual componente armazena permanentemente dados no PC?",
-      alternativas: [
-        "a) RAM",
-        "b) HD/SSD",
-        "c) GPU",
-        "d) CPU",
-        "e) ACER"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "O que significa ‘URL’?",
-      alternativas: [
-        "a) Unidade de Registro Local",
-        "b) Universal Resource Locator",
-        "c) Unique Run Length",
-        "d) User Remote Login",
-        "e) User Resource Link"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Qual programa é comumente usado para editar textos?",
-      alternativas: [
-        "a) Word",
-        "b) Windows",
-        "c) Excel",
-        "d) Chrome",
-        "e) PowerPoint"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Para copiar um arquivo no Windows, usa-se:",
-      alternativas: [
-        "a) CTRL + X",
-        "b) ALT + F4",
-        "c) CTRL + C",
-        "d) TAB",
-        "e) ESC"
-      ],
-      correta: 2
-    },
-    {
-      enunciado: "Um Modem é usado para:",
-      alternativas: [
-        "a) Converter sinais digitais em analógicos",
-        "b) Conectar mouse ao computador",
-        "c) Armazenar grandes volumes de dados",
-        "d) Melhorar a resolução do monitor",
-        "e) Gerenciar planilhas eletrônicas"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Qual item NÃO é um sistema operacional?",
-      alternativas: [
-        "a) iOS",
-        "b) Android",
-        "c) Linux",
-        "d) Microsoft Word",
-        "e) Windows"
-      ],
-      correta: 3
     }
-  ],
+"Informática": [
+  {
+    enunciado: "Qual destas alternativas representa um recurso de segurança em redes de computadores?",
+    alternativas: [
+      "Firewall",
+      "HD externo",
+      "Mouse",
+      "Monitor"
+    ],
+    correta: 0
+  },
+  {
+    enunciado: "Qual extensão é típica de arquivos executáveis no Windows?",
+    alternativas: [
+      ".txt",
+      ".exe",
+      ".mp3",
+      ".dll"
+    ],
+    correta: 1
+  },
+  {
+    enunciado: "O que significa a sigla 'URL'?",
+    alternativas: [
+      "Universal Resource Link",
+      "Uniform Resource Locator",
+      "Unified Reference Link",
+      "User Random Locator"
+    ],
+    correta: 1
+  },
+  {
+    enunciado: "Qual navegador pertence à Google?",
+    alternativas: [
+      "Safari",
+      "Firefox",
+      "Chrome",
+      "Opera"
+    ],
+    correta: 2
+  },
+  {
+    enunciado: "Qual dispositivo é considerado periférico de entrada?",
+    alternativas: [
+      "Monitor",
+      "Impressora",
+      "Teclado",
+      "Pen Drive"
+    ],
+    correta: 2
+  }
+],
 
-  "Raciocínio Lógico": [
-    {
-      enunciado: "Se todo A é B e nenhum B é C, então:",
-      alternativas: [
-        "a) Todo A é C",
-        "b) Nenhum A é C",
-        "c) Todo C é A",
-        "d) Alguns A são C",
-        "e) Alguns C não são A"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Considere a sequência: 2, 4, 8, 16… O próximo termo é:",
-      alternativas: [
-        "a) 18",
-        "b) 20",
-        "c) 24",
-        "d) 32",
-        "e) 36"
-      ],
-      correta: 3
-    },
-    {
-      enunciado: "Se P → Q e P é verdadeiro, então Q é:",
-      alternativas: [
-        "a) Falso",
-        "b) Verdadeiro",
-        "c) Contraditório",
-        "d) Indeterminado",
-        "e) Nenhuma das alternativas"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Uma proposição cujo valor lógico é sempre verdadeiro é chamada de:",
-      alternativas: [
-        "a) Contradição",
-        "b) Tautologia",
-        "c) Contingência",
-        "d) Implicação",
-        "e) Negação"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Se hoje é segunda e depois de amanhã é quinta, então:",
-      alternativas: [
-        "a) Hoje é domingo",
-        "b) Hoje é terça",
-        "c) Hoje é quarta",
-        "d) Hoje é quinta",
-        "e) Hoje é segunda"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Em lógica, ‘Não (A e B)’ é equivalente a:",
-      alternativas: [
-        "a) Não A ou Não B",
-        "b) Não A e Não B",
-        "c) A e B",
-        "d) A ou B",
-        "e) Nenhuma das anteriores"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Uma sequência é dada por 3, 6, 9, 12… Qual o 10º termo?",
-      alternativas: [
-        "a) 27",
-        "b) 30",
-        "c) 33",
-        "d) 36",
-        "e) 39"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Se hoje é terça e amanhã será quarta, ontem foi:",
-      alternativas: [
-        "a) Segunda",
-        "b) Domingo",
-        "c) Terça",
-        "d) Quarta",
-        "e) Sexta"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Se A ∨ B é verdadeiro, então:",
-      alternativas: [
-        "a) A e B são falsos",
-        "b) A é verdadeiro ou B é verdadeiro",
-        "c) A e B são verdadeiros",
-        "d) Nenhuma das alternativas",
-        "e) A é falso e B é falso"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Em uma tabela verdade, se A é falso e B é falso, então A ∧ B é:",
-      alternativas: [
-        "a) Verdadeiro",
-        "b) Falso",
-        "c) Indeterminado",
-        "d) Contraditório",
-        "e) Tautológico"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Se A ⇒ B e B ⇒ C, então A ⇒ C é:",
-      alternativas: [
-        "a) Contraditório",
-        "b) Tautológico",
-        "c) Contingencial",
-        "d) Equivocado",
-        "e) Irrelevante"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Se um número é divisível por 2 e por 3, então é divisível por:",
-      alternativas: [
-        "a) 2",
-        "b) 3",
-        "c) 5",
-        "d) 6",
-        "e) 9"
-      ],
-      correta: 3
-    },
-    {
-      enunciado: "Qual é o 5º termo da sequência: 1, 4, 7, 10…?",
-      alternativas: [
-        "a) 13",
-        "b) 14",
-        "c) 15",
-        "d) 16",
-        "e) 17"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Se x = 10 e y = 20, então x + y é:",
-      alternativas: [
-        "a) 10",  
-        "b) 20",  
-        "c) 30",  
-        "d) 25",  
-        "e) 15"
-      ],
-      correta: 2
-    },
-    {
-      enunciado: "Se A é verdadeiro e B é falso, então A ∨ B é:",
-      alternativas: [
-        "a) Verdadeiro",
-        "b) Falso",
-        "c) Contraditório",
-        "d) Tautológico",
-        "e) Irrelevante"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Qual é o valor lógico de ¬(verdadeiro)?",
-      alternativas: [
-        "a) Verdadeiro",
-        "b) Falso",
-        "c) Indeterminado",
-        "d) Contraditório",
-        "e) Equivocado"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Se hoje não é sábado, então amanhã não é:",
-      alternativas: [
-        "a) Domingo",
-        "b) Segunda",
-        "c) Sexta",
-        "d) Terça",
-        "e) Quarta"
-      ],
-      correta: 0
-    },  
+"Raciocínio Lógico": [
+  {
+    enunciado: "Se João tem 5 maçãs e compra mais 3, quantas maçãs ele tem agora?",
+    alternativas: [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    correta: 2
+  },
+  {
+    enunciado: "Na sequência 2, 4, 8, 16, o próximo número é:",
+    alternativas: [
+      "20",
+      "24",
+      "28",
+      "32"
+    ],
+    correta: 3
+  },
+  {
+    enunciado: "Qual a negação de: 'Todos estudam'?",
+    alternativas: [
+      "Ninguém estuda",
+      "Alguns estudam",
+      "Nem todos estudam",
+      "Todos não estudam"
+    ],
+    correta: 2
+  },
+  {
+    enunciado: "Se hoje é quarta-feira, que dia será daqui a 10 dias?",
+    alternativas: [
+      "Sábado",
+      "Domingo",
+      "Segunda-feira",
+      "Sexta-feira"
+    ],
+    correta: 3
+  },
+  {
+    enunciado: "Complete a sequência: A, C, E, G, ...",
+    alternativas: [
+      "I",
+      "H",
+      "J",
+      "L"
+    ],
+    correta: 0
+  }
+]
 
-    {
-      enunciado: "Se A é verdadeiro e B é falso, então A ∨ B é:",
-      alternativas: [
-        "a) Verdadeiro",
-        "b) Falso",
-        "c) Contraditório",
-        "d) Tautológico",
-        "e) Irrelevante"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Qual é o valor lógico de ¬(verdadeiro)?",
-      alternativas: [
-        "a) Verdadeiro",
-        "b) Falso",
-        "c) Indeterminado",
-        "d) Contraditório",
-        "e) Equivocado"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Se hoje não é sábado, então amanhã não é:",
-      alternativas: [
-        "a) Domingo",
-        "b) Segunda",
-        "c) Sexta",
-        "d) Terça",
-        "e) Quarta"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Qual é o resultado da operação lógica: (V ∧ F) ∨ (F ∨ V)?",
-      alternativas: [
-        "a) Verdadeiro",
-        "b) Falso",
-        "c) Indeterminado",
-        "d) Contraditório",
-        "e) Nenhuma das anteriores"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Em lógica, A ⇒ B é falso apenas se:",
-      alternativas: [
-        "a) A é verdadeiro e B é verdadeiro",
-        "b) A é falso e B é verdadeiro",
-        "c) A é verdadeiro e B é falso",
-        "d) A é falso e B é falso",
-        "e) Nunca é falso"
-      ],
-      correta: 2
-    },
-    {
-      enunciado: "Considere a sequência: 1, 3, 5, 7… O 7º termo é:",
-      alternativas: [
-        "a) 11",
-        "b) 13",
-        "c) 15",
-        "d) 17",
-        "e) 19"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Em lógica proposicional, a expressão ‘A ∧ ¬A’ é:",
-      alternativas: [
-        "a) Tautologia",
-        "b) Contradição",
-        "c) Contingência",
-        "d) Condicional",
-        "e) Bicondicional"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Se x aumenta e y diminui proporcionalmente, então x e y são:",
-      alternativas: [
-        "a) Diretamente proporcionais",
-        "b) Inversamente proporcionais",
-        "c) Independentes",
-        "d) Contraditórios",
-        "e) Equivalentes"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Qual é o próximo número da sequência: 2, 4, 6, 8…?",
-      alternativas: [
-        "a) 10",
-        "b) 12",
-        "c) 14",
-        "d) 9",
-        "e) 11"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Se uma proposição é falsa, então a sua negação é:",
-      alternativas: [
-        "a) Falsa",
-        "b) Verdadeira",
-        "c) Indeterminada",
-        "d) Tautológica",
-        "e) Contraditória"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Uma sequência aritmética tem 1º termo 7 e razão 3. O 4º termo é:",
-      alternativas: [
-        "a) 13",
-        "b) 16",
-        "c) 19",
-        "d) 10",
-        "e) 22"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Se o conjunto A tem 3 elementos e o B tem 4 elementos, A ∪ B tem no máximo:",
-      alternativas: [
-        "a) 7",
-        "b) 12",
-        "c) 4",
-        "d) 3",
-        "e) 1"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Considere a proposição: ‘Se chove, então uso guarda-chuva.’ A contrária é:",
-      alternativas: [
-        "a) Se uso guarda-chuva, então chove.",
-        "b) Se não uso guarda-chuva, então não chove.",
-        "c) Se não chove, então não uso guarda-chuva.",
-        "d) Se não uso guarda-chuva, então chove.",
-        "e) Chove e uso guarda-chuva."
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Qual é o valor lógico de (V ∨ F)?",
-      alternativas: [
-        "a) Verdadeiro",
-        "b) Falso",
-        "c) Contraditório",
-        "d) Indeterminado",
-        "e) Nenhuma das alternativas"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Considere a sequência numérica: 5, 10, 15, 20… O 5º termo é:",
-      alternativas: [
-        "a) 20",
-        "b) 22",
-        "c) 25",
-        "d) 30",
-        "e) 35"
-      ],
-      correta: 2
-    },
-    {
-      enunciado: "Se a proposição ‘A ∨ B’ é falsa, então:",
-      alternativas: [
-        "a) A é verdadeira e B é falsa",
-        "b) A é falsa e B é verdadeira",
-        "c) A e B são verdadeiras",
-        "d) A e B são falsas",
-        "e) A ou B é verdadeira"
-      ],
-      correta: 3
-    },
-    {
-      enunciado: "Qual é o próximo número da sequência 10, 20, 30…?",
-      alternativas: [
-        "a) 35",
-        "b) 40",
-        "c) 45",
-        "d) 50",
-        "e) 55"
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Se A ⇒ B é verdadeira e B ⇒ C é verdadeira, então A ⇒ C é:",
-      alternativas: [
-        "a) Verdadeira",
-        "b) Falsa",
-        "c) Indeterminada",
-        "d) Contraditória",
-        "e) Contingente"
-      ],
-      correta: 0
-    }
-  ]
 };
