@@ -1,42 +1,65 @@
 import { useState } from "react";
 import "./theme.css";
-function App() {
+
+export default function App() {
   const [screen, setScreen] = useState("menu");
   const [materia, setMateria] = useState(null);
 
-  const materias = ["Português", "Constitucional", "Informática", "Raciocínio Lógico"];
+  const materias = [
+    "Português",
+    "Constitucional",
+    "Informática",
+    "Raciocínio Lógico",
+  ];
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="page">
       {screen === "menu" && (
-        <>
-          <h1>TJ-SP Chronicles — Treineiro Competitivo 🏰</h1>
-          <p>Bem-vindo, jovem escudeiro! Escolha sua trilha de conhecimento:</p>
+        <div className="menu">
+          <h1 className="title">TJ-SP Chronicles ⚔️📜</h1>
+          <p className="subtitle">
+            Bem-vindo ao salão do conhecimento, jovem escudeiro.  
+            Escolha tua senda e acumule prestígio na prova TJ-SP!
+          </p>
 
-          {materias.map((m) => (
-            <button
-              key={m}
-              onClick={() => {
-                setMateria(m);
-                setScreen("quest");
-              }}
-              style={{ display: "block", margin: "10px 0" }}
-            >
-              {m}
-            </button>
-          ))}
-        </>
+          <div className="list">
+            {materias.map((m) => (
+              <button
+                key={m}
+                className="btn materia"
+                onClick={() => {
+                  setMateria(m);
+                  setScreen("quest");
+                }}
+              >
+                {m}
+              </button>
+            ))}
+          </div>
+
+          <p className="footer-lore">
+            *Toda jornada começa com um clique poderoso.*
+          </p>
+        </div>
       )}
 
       {screen === "quest" && (
-        <>
-          <h2>Disciplina: {materia}</h2>
-          <p>Aqui virão as quests (questões) da banca TJ-SP.</p>
-          <button onClick={() => setScreen("menu")}>Voltar</button>
-        </>
+        <div className="quest">
+          <h2 className="title">{materia} — Arena das Questões 🏹</h2>
+
+          <p className="quest-desc">
+            Aqui surgirão desafios da banca TJ-SP.  
+            Responda, vença e farme XP jurídico-tecnológico.
+          </p>
+
+          <button
+            className="btn back"
+            onClick={() => setScreen("menu")}
+          >
+            ⬅ Retornar ao Salão Inicial
+          </button>
+        </div>
       )}
     </div>
   );
 }
-
-export default App;
