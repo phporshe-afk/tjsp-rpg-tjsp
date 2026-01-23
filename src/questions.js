@@ -245,6 +245,8 @@ const questions = {
       ],
       correta: 0
     }
+    ],
+
 "Informática": [
   {
     enunciado: "Qual destas alternativas representa um recurso de segurança em redes de computadores?",
