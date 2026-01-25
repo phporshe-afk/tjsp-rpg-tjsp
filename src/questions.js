@@ -1,5 +1,5 @@
 const questions = {
-  portugues: [
+  "portugues": [
     {
       enunciado: "Assinale a alternativa cujo emprego do sinal indicativo de crase está correto:",
       alternativas: [
@@ -211,7 +211,7 @@ const questions = {
     }
   ],
 
-  constitucional: [
+  "constitucional": [
     {
       enunciado: "O controle de constitucionalidade pode ser exercido de forma:",
       alternativas: [
@@ -245,112 +245,113 @@ const questions = {
       ],
       correta: 0
     }
-    ],
+  ],
 
-"Informática": [
-  {
-    enunciado: "Qual destas alternativas representa um recurso de segurança em redes de computadores?",
-    alternativas: [
-      "Firewall",
-      "HD externo",
-      "Mouse",
-      "Monitor"
-    ],
-    correta: 0
-  },
-  {
-    enunciado: "Qual extensão é típica de arquivos executáveis no Windows?",
-    alternativas: [
-      ".txt",
-      ".exe",
-      ".mp3",
-      ".dll"
-    ],
-    correta: 1
-  },
-  {
-    enunciado: "O que significa a sigla 'URL'?",
-    alternativas: [
-      "Universal Resource Link",
-      "Uniform Resource Locator",
-      "Unified Reference Link",
-      "User Random Locator"
-    ],
-    correta: 1
-  },
-  {
-    enunciado: "Qual navegador pertence à Google?",
-    alternativas: [
-      "Safari",
-      "Firefox",
-      "Chrome",
-      "Opera"
-    ],
-    correta: 2
-  },
-  {
-    enunciado: "Qual dispositivo é considerado periférico de entrada?",
-    alternativas: [
-      "Monitor",
-      "Impressora",
-      "Teclado",
-      "Pen Drive"
-    ],
-    correta: 2
-  }
-],
+  "informatica": [
+    {
+      enunciado: "Qual destas alternativas representa um recurso de segurança em redes de computadores?",
+      alternativas: [
+        "Firewall",
+        "HD externo",
+        "Mouse",
+        "Monitor"
+      ],
+      correta: 0
+    },
+    {
+      enunciado: "Qual extensão é típica de arquivos executáveis no Windows?",
+      alternativas: [
+        ".txt",
+        ".exe",
+        ".mp3",
+        ".dll"
+      ],
+      correta: 1
+    },
+    {
+      enunciado: "O que significa a sigla 'URL'?",
+      alternativas: [
+        "Universal Resource Link",
+        "Uniform Resource Locator",
+        "Unified Reference Link",
+        "User Random Locator"
+      ],
+      correta: 1
+    },
+    {
+      enunciado: "Qual navegador pertence à Google?",
+      alternativas: [
+        "Safari",
+        "Firefox",
+        "Chrome",
+        "Opera"
+      ],
+      correta: 2
+    },
+    {
+      enunciado: "Qual dispositivo é considerado periférico de entrada?",
+      alternativas: [
+        "Monitor",
+        "Impressora",
+        "Teclado",
+        "Pen Drive"
+      ],
+      correta: 2
+    }
+  ],
 
-"Raciocínio Lógico": [
-  {
-    enunciado: "Se João tem 5 maçãs e compra mais 3, quantas maçãs ele tem agora?",
-    alternativas: [
-      "6",
-      "7",
-      "8",
-      "9"
-    ],
-    correta: 2
-  },
-  {
-    enunciado: "Na sequência 2, 4, 8, 16, o próximo número é:",
-    alternativas: [
-      "20",
-      "24",
-      "28",
-      "32"
-    ],
-    correta: 3
-  },
-  {
-    enunciado: "Qual a negação de: 'Todos estudam'?",
-    alternativas: [
-      "Ninguém estuda",
-      "Alguns estudam",
-      "Nem todos estudam",
-      "Todos não estudam"
-    ],
-    correta: 2
-  },
-  {
-    enunciado: "Se hoje é quarta-feira, que dia será daqui a 10 dias?",
-    alternativas: [
-      "Sábado",
-      "Domingo",
-      "Segunda-feira",
-      "Sexta-feira"
-    ],
-    correta: 3
-  },
-  {
-    enunciado: "Complete a sequência: A, C, E, G, ...",
-    alternativas: [
-      "I",
-      "H",
-      "J",
-      "L"
-    ],
-    correta: 0
-  }
-]
-
+  "raciocinio_logico": [
+    {
+      enunciado: "Se João tem 5 maçãs e compra mais 3, quantas maçãs ele tem agora?",
+      alternativas: [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      correta: 2
+    },
+    {
+      enunciado: "Na sequência 2, 4, 8, 16, o próximo número é:",
+      alternativas: [
+        "20",
+        "24",
+        "28",
+        "32"
+      ],
+      correta: 3
+    },
+    {
+      enunciado: "Qual a negação de: 'Todos estudam'?",
+      alternativas: [
+        "Ninguém estuda",
+        "Alguns estudam",
+        "Nem todos estudam",
+        "Todos não estudam"
+      ],
+      correta: 2
+    },
+    {
+      enunciado: "Se hoje é quarta-feira, que dia será daqui a 10 dias?",
+      alternativas: [
+        "Sábado",
+        "Domingo",
+        "Segunda-feira",
+        "Sexta-feira"
+      ],
+      correta: 3
+    },
+    {
+      enunciado: "Complete a sequência: A, C, E, G, ...",
+      alternativas: [
+        "I",
+        "H",
+        "J",
+        "L"
+      ],
+      correta: 0
+    }
+  ]
 };
+
+export default questions;
