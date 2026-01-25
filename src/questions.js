@@ -1,5 +1,5 @@
 const questions = {
-  "portugues": [
+  portugues: [
     {
       enunciado: "Assinale a alternativa cujo emprego do sinal indicativo de crase está correto:",
       alternativas: [
@@ -109,109 +109,10 @@ const questions = {
         "e) Ruis"
       ],
       correta: 3
-    },
-    {
-      enunciado: "Assinale a alternativa com pontuação correta:",
-      alternativas: [
-        "a) Os estudantes cansados foram embora.",
-        "b) Os estudantes, cansados foram embora.",
-        "c) Os estudantes cansados, foram embora.",
-        "d) Os estudantes, cansados, foram embora.",
-        "e) Os estudantes, cansados foram, embora."
-      ],
-      correta: 3
-    },
-    {
-      enunciado: "Indique a alternativa em que o período é composto por subordinação:",
-      alternativas: [
-        "a) Ela sorriu quando viu o resultado.",
-        "b) O céu estava limpo e claro.",
-        "c) Chegou cedo e saiu tarde.",
-        "d) Ele lê livros e estuda sempre.",
-        "e) Vamos ao parque ou ao cinema."
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Assinale a alternativa em que a palavra 'porquê' é usada adequadamente:",
-      alternativas: [
-        "a) Explique porquê faltou.",
-        "b) Não sei por que ele saiu.",
-        "c) Porquê você não estudou?",
-        "d) Todos os porquês são válidos.",
-        "e) Gosto do porquê disto."
-      ],
-      correta: 1
-    },
-    {
-      enunciado: "Assinale a alternativa que apresenta erro de regência verbal:",
-      alternativas: [
-        "a) Lembre-me disso.",
-        "b) Preferem café ao chá.",
-        "c) Chegar à noite.",
-        "d) Assistir ao jogo.",
-        "e) Gosto de estudar."
-      ],
-      correta: 2
-    },
-    {
-      enunciado: "Assinale a alternativa em que há concordância incorreta:",
-      alternativas: [
-        "a) Há muitos livros na estante.",
-        "b) Faltam recursos suficientes.",
-        "c) Existem motivos convincentes.",
-        "d) Precisam ser revisados os critérios.",
-        "e) Fazem anos que estudo."
-      ],
-      correta: 4
-    },
-    {
-      enunciado: "Assinale a alternativa cuja palavra não leva acento:",
-      alternativas: [
-        "a) Exame",
-        "b) País",
-        "c) Fácil",
-        "d) Júri",
-        "e) Trânsito"
-      ],
-      correta: 0
-    },
-    {
-      enunciado: "Assinale a alternativa que expressa sinonímia correta:",
-      alternativas: [
-        "a) Rápido — Lento",
-        "b) Inteligente — Sábio",
-        "c) Alegre — Feliz",
-        "d) Bonito — Feio",
-        "e) Útil — Desnecessário"
-      ],
-      correta: 2
-    },
-    {
-      enunciado: "Em “Estudantes chegaram cedo.”, o verbo 'chegaram' está no tempo:",
-      alternativas: [
-        "a) Futuro",
-        "b) Presente",
-        "c) Pretérito perfeito",
-        "d) Infinitivo",
-        "e) Gerúndio"
-      ],
-      correta: 2
-    },
-    {
-      enunciado: "Assinale a alternativa em que o adjunto adverbial está corretamente identificado:",
-      alternativas: [
-        "a) Ele correu rápido — modo",
-        "b) Ele estudou duro — causa",
-        "c) Hoje teremos chuva — tempo",
-        "d) Lá chegaram cedo — lugar",
-        "e) Eu corri ontem — finalidade"
-      ],
-      correta: 2
     }
   ],
 
-  "constitucional": [
+  constitucional: [
     {
       enunciado: "O controle de constitucionalidade pode ser exercido de forma:",
       alternativas: [
@@ -247,7 +148,7 @@ const questions = {
     }
   ],
 
-  "informatica": [
+  informatica: [ // <-- SEM ASPAS, SEM ACENTO E COM VÍRGULA ANTES
     {
       enunciado: "Qual destas alternativas representa um recurso de segurança em redes de computadores?",
       alternativas: [
@@ -300,25 +201,15 @@ const questions = {
     }
   ],
 
-  "raciocinio_logico": [
+  raciocinio: [
     {
       enunciado: "Se João tem 5 maçãs e compra mais 3, quantas maçãs ele tem agora?",
-      alternativas: [
-        "6",
-        "7",
-        "8",
-        "9"
-      ],
+      alternativas: ["6","7","8","9"],
       correta: 2
     },
     {
       enunciado: "Na sequência 2, 4, 8, 16, o próximo número é:",
-      alternativas: [
-        "20",
-        "24",
-        "28",
-        "32"
-      ],
+      alternativas: ["20","24","28","32"],
       correta: 3
     },
     {
@@ -343,15 +234,10 @@ const questions = {
     },
     {
       enunciado: "Complete a sequência: A, C, E, G, ...",
-      alternativas: [
-        "I",
-        "H",
-        "J",
-        "L"
-      ],
+      alternativas: ["I","H","J","L"],
       correta: 0
     }
   ]
 };
 
-export default questions;
+export { questions };
